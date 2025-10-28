@@ -1,0 +1,92 @@
+.black {
+	background-color: black;
+	position: absolute;
+	width: calc(100% / 3);
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.white {
+	background-color: white;
+	position: absolute;
+	width: calc(100% / 3 + 100% / 3);
+	height: calc(100% / 2);
+	top: 0;
+	right: 0;
+}
+
+.three {
+	position: absolute;
+	display: flex;
+	width: calc(100% / 3 + 100% / 3);
+	height: calc(100% / 2);
+	bottom: 0;
+	right: 0;
+	/*border: 2px solid black;*/
+}
+
+.red {
+	background-color: red;
+	width: calc(100% / 6);
+	left: 0;
+}
+
+.yellow {
+	background-color: yellow;
+	width: calc(100% / 6);
+	left: calc(100% / 3);
+}
+
+.blue {
+	background-color: blue;
+	width: calc(100% / 6);
+	right: calc(100% / 2);
+}
+
+.gray {
+	background-color: gray;
+	width: calc(100% / 2);
+	height: 100%;
+	right: 0;
+	bottom: 0;
+}
+
+
+@media screen and (max-width: 900px) {
+
+	.black {
+		width: calc(100% / 9);
+	}
+
+	.white {
+		width: calc(100% - 100% / 9);
+	}
+
+	.three {
+		flex-direction: column;
+		width: calc(100% - 100% / 9);
+		height: calc(100% / 2);
+
+	}
+
+	.red {
+		width: 100%;
+		height: calc(100% / 6);
+	}
+
+	.yellow {
+		width: 100%;
+		height: calc(100% / 6);
+	}
+
+	.blue {
+		width: 100%;
+		height: calc(100% / 6);
+	}
+
+	.gray {
+		width: 100%;
+		height: calc(100% / 2);
+	}
+}
